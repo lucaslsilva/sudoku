@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="slot" *ngFor="let row of grid" >
+        <div class="inner-container">
+            <div class="item" *ngFor="let item of row"  [ngClass]="item.class">
+                <input matInput [disabled]="item.disabled" [(ngModel)]="item.value" (change)="validateValue(item)">
+            </div>
+        </div>
+    </div>
+</div>

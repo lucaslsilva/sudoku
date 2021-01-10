@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    grid-template-columns: 33.3% auto 33.3%;
+    grid-template-rows: 33.3% auto 33.3%;
+    grid-template-areas: 
+        "slot1 slot2 slot3"
+        "slot4 slot5 slot6"
+        "slot7 slot8 slot9";
+    height: 100%;
+    padding-top: 10px;
+}
+
+.slot {
+    border: 4px solid black;
+}
+
+.inner-container {
+    display: grid;
+    grid-template-columns: 33.3% auto 33.3%;
+    grid-template-rows: 33.3% auto 33.3%;
+    grid-template-areas: 
+        "inner-slot1-1 inner-slot1-2 inner-slot1-3"
+        "inner-slot1-4 inner-slot1-5 inner-slot1-6"
+        "inner-slot1-7 inner-slot1-8 inner-slot1-9";
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item {
+    border: 3px solid black;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-self: stretch stretch;
+}
+
+.mat-input-element:disabled {
+    color: black;
+}
+
+.mat-input-element:not(disabled) {
+    color: gray;
+}
+
+input { 
+    text-align: center; 
+}
+
+.wrong {
+    background-color: lightcoral;
+}
