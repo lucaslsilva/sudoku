@@ -51,3 +51,7 @@ input {
 .wrong {
     background-color: lightcoral;
 }
+
+.selected {
+    background-color: lightgray;
+}
